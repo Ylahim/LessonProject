@@ -6650,11 +6650,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\trolt\\Desktop\\programozás\\Vizsgaremek\\Vizsgaremek\\backend\\backend.csproj",
+      "projectUniqueName": "C:\\Users\\trolt\\Desktop\\programozás\\yahim\\LessonProject\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "C:\\Users\\trolt\\Desktop\\programozás\\Vizsgaremek\\Vizsgaremek\\backend\\backend.csproj",
+      "projectPath": "C:\\Users\\trolt\\Desktop\\programozás\\yahim\\LessonProject\\backend\\backend.csproj",
       "packagesPath": "C:\\Users\\trolt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\trolt\\Desktop\\programozás\\Vizsgaremek\\Vizsgaremek\\backend\\obj\\",
+      "outputPath": "C:\\Users\\trolt\\Desktop\\programozás\\yahim\\LessonProject\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

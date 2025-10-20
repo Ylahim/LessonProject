@@ -95,6 +95,7 @@ namespace backend.Controllers
         public ActionResult Logout()
         {
             Response.Cookies.Delete("accessToken");
+            Response.Cookies.Delete("refreshToken");
             return Ok("Logout Successful");
         }
     }

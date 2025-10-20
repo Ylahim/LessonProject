@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ISl5iTeyB/E=",
+  "dgSpecHash": "NiN05LMwi6I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\trolt\\Desktop\\programozás\\Vizsgaremek\\Vizsgaremek\\backend\\backend.csproj",
+  "projectFilePath": "C:\\Users\\trolt\\Desktop\\programozás\\yahim\\LessonProject\\backend\\backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\trolt\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\trolt\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

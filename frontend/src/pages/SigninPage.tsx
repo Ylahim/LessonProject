@@ -35,7 +35,7 @@ function SigninPage(): JSX.Element {
             if (errorSpanRef.current) {
                 errorSpanRef.current.textContent = "";
             }
-            navigate("/daily-journal");
+            navigate("/orders");
         } catch (error) {
             if (errorSpanRef.current) {
                 if (error instanceof AxiosError && error.response) {
