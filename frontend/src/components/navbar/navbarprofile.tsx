@@ -21,18 +21,18 @@ function ProfileRender(): JSX.Element {
     );
     return (
         <div>
-            <button
+            <div
                 onClick={() => {
                     setIsOpen(true);
                 }}
-                className="text-color-1 cursor-pointer"
+                className="text-color-1 cursor-pointer flex items-center"
             >
                 <CgProfile className="text-[1.8rem]" />
-            </button>
+            </div>
             {isOpen && (
                 <div
                     ref={profileDropdown}
-                    className={`absolute translate-x-[-85%] bg-white flex-col rounded-md mt-[5px] pt-0 pb-0 flex w-[10rem] text-center ${
+                    className={`absolute translate-x-[-85%] flex-col rounded-md mt-[5px] pt-0 pb-0 flex w-[10rem] text-center ${
                         isOpen && "dropdown-content"
                     }`}
                 >
@@ -41,14 +41,14 @@ function ProfileRender(): JSX.Element {
                             <Link
                                 to="/orders"
                                 onClick={showProfileBar}
-                                className="flex place-content-between cursor-pointer p-3 pt-[0]"
+                                className="flex place-content-between cursor-pointer p-3 pt-[0] no-underline text-black p-0.2rem"
                             >
                                 Orders
                             </Link>
                             <Link
                                 to="/"
                                 onClick={showProfileBar}
-                                className="flex place-content-between cursor-pointer p-3"
+                                className="flex place-content-between cursor-pointer p-3 no-underline text-black"
                             >
                                 Profile-settings
                             </Link>
@@ -62,7 +62,7 @@ function ProfileRender(): JSX.Element {
                                         console.log(error);
                                     }
                                 }}
-                                className="cursor-pointer flex place-content-between p-3 text-center"
+                                className="cursor-pointer flex place-content-between p-3 text-center no-underline text-black"
                             >
                                 Sign-Out
                             </button>
@@ -72,14 +72,14 @@ function ProfileRender(): JSX.Element {
                             <Link
                                 to="/sign-in"
                                 onClick={showProfileBar}
-                                className="flex place-content-between cursor-pointer p-3"
+                                className="flex place-content-between cursor-pointer p-3 no-underline text-black p-[0.4rem]"
                             >
                                 Sign-in
                             </Link>
                             <Link
                                 to="/sign-up"
                                 onClick={showProfileBar}
-                                className="flex place-content-between cursor-pointer p-3"
+                                className="flex place-content-between cursor-pointer p-3 no-underline text-black p-[0.4rem]"
                             >
                                 Sign-up
                             </Link>

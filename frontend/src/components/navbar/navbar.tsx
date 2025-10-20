@@ -6,7 +6,7 @@ function Navbar(): JSX.Element {
     const navigate = useNavigate();
 
     return (
-        <header className="fixed w-screen h-[5rem] bg-color-1 flex place-content-between">
+        <header className="fixed w-screen h-[5rem] bg-color-1 flex place-content-between items-center">
             <h1
                 className="title-font text-color-1 cursor-pointer text-[2rem] m-[0.5rem] pl-[0.5rem]"
                 onClick={() => {
