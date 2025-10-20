@@ -1,3 +1,8 @@
+.dropdown-content {
+    background-color: white;
+    border-radius: 3px;
+}
+
 .dropdown-content::before {
     content: "";
     position: relative;

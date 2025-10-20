@@ -1,91 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-    .bg-color-1 {
-        background-color: #242424;
-    }
-    .bg-color-2 {
-        background-color: #1a1a1a;
-    }
-    .text-color-1 {
-        color: rgba(255, 255, 255, 0.87);
-    }
-    .title-font {
-        font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-        font-weight: 600;
-    }
-}
-
-#root {
-    width: 100%;
-    min-height: 100vh;
-}
-
 :root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    --title-font: "Lora", serif;
+    --text-font: "Nunito", sans-serif;
+    --bg-color-1: #1e2a38;
+    --bg-color-2: #2f3e50;
+    --btn-color-1: #557a95;
+    --text-color-1: #c5cfdf;
+    --text-color-2: #8a9ba8;
+    --soft-white: #f5f5f5;
 }
 
-a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
+.title-font {
+    font-family: var(--title-font), sans-serif;
 }
-a:hover {
-    color: #535bf2;
+
+.text-font {
+    font-family: var(--text-font), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-font), sans-serif;
+}
+
+p,
+span,
+a,
+li {
+    font-family: var(--text-font), sans-serif;
+}
+
+.bg-color-1 {
+    background-color: var(--bg-color-1);
+    transition: background-color 1s ease;
+}
+
+.bg-color-2 {
+    background-color: var(--bg-color-2);
+    transition: background-color 1s ease;
+}
+
+.bg-soft-white {
+    background-color: var(--soft-white);
+}
+
+.btn-color-1 {
+    background-color: var(--btn-color-1);
+    transition: background-color 1s ease;
+}
+
+.text-color-1 {
+    color: var(--text-color-1);
+    transition: color 1s ease;
+}
+
+.text-color-2 {
+    color: var(--text-color-2);
+    transition: color 1s ease;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: var(--text-color-2);
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px var(--soft-white) inset !important;
+    -webkit-text-fill-color: #000 !important;
 }
 
 body {
     margin: 0;
-    min-width: 320px;
-    min-height: 100vh;
-}
-
-h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
-}
-
-button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
-    cursor: pointer;
-    transition: border-color 0.25s;
-}
-button:hover {
-    border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-    a:hover {
-        color: #747bff;
-    }
-    button {
-        background-color: #f9f9f9;
-    }
 }
